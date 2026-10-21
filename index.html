@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csoda Vidámpark</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="promo-banner">
+        🔥 <strong>VILLÁMACSKÁR AKCIÓ!</strong> Használd a <u>CSODA2026</u> kuponkódot, és kapsz 20% kedvezményt a jegyek árából! 🔥
+    </div>
+
+
+    <header>
+        <h1>🎡 Csoda Vidámpark</h1>
+        <nav>
+            <a href="#jatekok">Játékok</a>
+            <a href="#vasarlas">Jegyvásárlás</a>
+            <a href="#kapcsolat">Kapcsolat & Térkép</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h2>Éld át az igazi kalandot!</h2>
+        <p>Hatalmas hullámvasutak, családi programok és felejthetetlen élmények várnak rád.</p>
+        <a href="#vasarlas" class="btn">Vásárolj jegyet most</a>
+    </section>
+
+
+    <div class="container">
+        
+
+        <div class="promo-card">
+            <h3>⚡ Kiemelt Hétvégi Ajánlat! ⚡</h3>
+            <p>Minden családi jegy mellé <strong>ingyen vattacukor</strong> jár! Ne hagyd ki a korlátozott ideig szóló akciót!</p>
+        </div>
+
+
+        <section id="jatekok">
+            <h2 class="section-title">Legnépszerűbb Játékaink</h2>
+            <div id="rides-grid" class="rides-grid">
+
+            </div>
+        </section>
+
+
+        <section id="vasarlas" class="info-section" style="margin-top: 50px;">
+            <h2 class="section-title" style="margin-bottom: 20px;">Online Jegyvásárlás</h2>
+            
+            <form id="ticket-form">
+                <div class="form-group">
+                    <label for="ticket-type">Válassz jegytípust:</label>
+                    <select id="ticket-type" required>
+
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="ticket-count">Darabszám:</label>
+                    <input type="number" id="ticket-count" value="1" min="1" max="10" required>
+                </div>
+
+                <div class="total-price" style="margin: 20px 0; font-size: 1.2rem;">
+                    <strong>Fizetendő összesen: <span id="total-amount">6 500</span> Ft</strong>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">Megrendelés</button>
+            </form>
+        </section>
+
+
+        <section id="kapcsolat" class="info-section">
+            <h2 class="section-title" style="margin-bottom: 20px;">Nyitvatartás & Helyszín</h2>
+            <p><strong>Cím:</strong> <span id="contact-address">1234 Vidámpark utca 1.</span></p>
+            <p><strong>Nyitvatartás:</strong> <span id="contact-hours">Hétfőtől Vasárnapig: 10:00 - 20:00</span></p>
+            <p style="margin-bottom: 20px;"><strong>Email:</strong> <span id="contact-email">info@csodavidampark.hu</span></p>
+
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.3855663158056!2d19.04023567687057!3d47.4979135012586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc344c274b77%3A0x6bba8c2278bc8c0b!2sBudapest!5e0!3m2!1shu!2shu!4v1700000000000!5m2!1shu!2shu" 
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </div>
+
+
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>🎉 Sikeres vásárlás!</h3>
+            <p id="modal-text">Köszönjük a rendelésed. A jegyeket elküldtük az email címedre.</p>
+            <button class="btn" id="modal-ok">Rendben</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 Csoda Vidámpark. Minden jog fenntartva.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
